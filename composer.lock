@@ -1,0 +1,70 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "dfbfc5338ce33a782ea0b25511ddf6b6",
+    "packages": [
+        {
+            "name": "wpn/framework",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WordPress-Neon/framework.git",
+                "reference": "a7274ddf3eb27b54cb6bbb798405fc0a65fc9a25"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WordPress-Neon/framework/zipball/a7274ddf3eb27b54cb6bbb798405fc0a65fc9a25",
+                "reference": "a7274ddf3eb27b54cb6bbb798405fc0a65fc9a25",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "ext-openssl": "*",
+                "php": "^8.1.0"
+            },
+            "provide": {
+                "psr/container-implementation": "1.1|2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/Templates/helpers.php"
+                ],
+                "psr-4": {
+                    "WPN\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Josh Bonnick",
+                    "email": "josh@bonnick.dev"
+                }
+            ],
+            "description": "Wrapper around WordPress core functions to improve developer experience when developing themes and plugins",
+            "homepage": "https://wpn.bonnick.dev",
+            "support": {
+                "issues": "https://github.com/WordPress-Neon/framework/issues",
+                "source": "https://github.com/WordPress-Neon/framework"
+            },
+            "time": "2022-03-20T22:19:09+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": {
+        "php": "^8.1.0"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
+}
