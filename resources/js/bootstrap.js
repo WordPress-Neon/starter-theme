@@ -1,0 +1,1 @@
+window.toggleMobileMenu = require('./Composables/MobileMenu')

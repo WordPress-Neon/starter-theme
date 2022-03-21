@@ -1,0 +1,10 @@
+@import './variables';
+@import './typography';
+@import './libs';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './wp-nav-menu';
+@import './wp-pagination';

@@ -1,0 +1,20 @@
+.pagination {
+  @apply flex justify-center;
+
+  .nav-links {
+    @apply flex mx-auto space-x-3 items-center;
+
+    a, span {
+      @apply block text-center py-0.5 bg-transparent text-black transition-colors duration-100
+      ease-in-out;
+
+      &.current {
+        @apply bg-wpn text-white;
+      }
+
+      &:not(.next):not(.prev) {
+        @apply w-[30px] hover:bg-opacity-80 border rounded-full border hover:border-wpn;
+      }
+    }
+  }
+}

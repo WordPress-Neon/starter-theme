@@ -1,0 +1,86 @@
+.call-to-action a {
+  @apply bg-[#f4404e] border-2 border-transparent hover:bg-transparent hover:text-[#f4404e] hover:border-[#f4404e] transition-all duration-200 rounded-3xl py-2.5 px-6 text-white text-center;
+}
+
+#menu-navigation-menu a {
+  display: block;
+  @apply py-2.5;
+}
+
+header nav .menu {
+  li {
+    &:not(.menu-item-has-children) {
+      a {
+        display: block;
+      }
+    }
+
+    display: block;
+  }
+
+  .menu-item-has-children {
+    position: relative;
+
+    @media (min-width: 1024px) {
+      &::after {
+        content: '\f078';
+        font-family: 'Font Awesome 6 Pro';
+        margin-left: 0.5rem;
+        font-weight: 400;
+      }
+    }
+
+    ul.sub-menu {
+      @media(min-width: 1024px) {
+        @apply absolute bg-white pt-6 pb-3 px-3 shadow-2xl min-w-[200px] left-0 border-b border-b-gray-200 z-10 transition-all duration-200 ease-in-out translate-y-5 opacity-0 pointer-events-none;
+      }
+
+      li {
+        @apply w-full;
+
+        @media (max-width: 1024px) {
+          margin-top: 0.75rem;
+        }
+      }
+
+      ul.sub-menu {
+        left: unset;
+        padding-top: 0.75rem;
+        right: calc(100% + 0.1rem);
+        top: -0.7rem;
+        box-shadow: unset;
+        @media(max-width: 1024px) {
+          padding-top: 0;
+          text-align: center;
+        }
+      }
+
+      li.menu-item-has-children {
+        @media (min-width: 1024px) {
+          &::before {
+            content: '\f053';
+            font-family: 'Font Awesome 6 Pro';
+            margin-right: 0.5rem;
+            font-weight: 400;
+          }
+
+          &::after {
+            content: unset;
+          }
+        }
+      }
+    }
+
+    @media(max-width: 1024px) {
+      ul.sub-menu {
+        text-align: center;
+      }
+    }
+
+    &:hover {
+      > ul.sub-menu {
+        @apply flex translate-y-0 opacity-100 pointer-events-auto
+      }
+    }
+  }
+}
