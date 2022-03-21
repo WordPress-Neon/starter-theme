@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress-Neon/framework.git",
-                "reference": "29f510ee0a0bed98b46cfeb16e2c25ae076edfd5"
+                "reference": "e9ce3d1b114a94b889e5e809fbf636ee26b5eab6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress-Neon/framework/zipball/29f510ee0a0bed98b46cfeb16e2c25ae076edfd5",
-                "reference": "29f510ee0a0bed98b46cfeb16e2c25ae076edfd5",
+                "url": "https://api.github.com/repos/WordPress-Neon/framework/zipball/e9ce3d1b114a94b889e5e809fbf636ee26b5eab6",
+                "reference": "e9ce3d1b114a94b889e5e809fbf636ee26b5eab6",
                 "shasum": ""
             },
             "require": {
@@ -55,7 +55,7 @@
                 "issues": "https://github.com/WordPress-Neon/framework/issues",
                 "source": "https://github.com/WordPress-Neon/framework"
             },
-            "time": "2022-03-21T01:08:22+00:00"
+            "time": "2022-03-21T01:20:37+00:00"
         }
     ],
     "packages-dev": [],
